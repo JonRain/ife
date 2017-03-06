@@ -31,35 +31,35 @@
 }
 @media (min-width:1080px ) {
 	.la-1{
-		width: calc(8.333333%-20px);
+		width: calc(8.333333% - 20px);
 	}
 	.la-2{
-		width: calc(16.666666%-20px);
+		width: calc(16.666666% - 20px);
 	}
 	.la-3{
-		width: calc(25%-20px);
+		width: calc(25% - 20px);
 	}
 	.la-4{
-		width: calc(33.333333%-20px);
+		width: calc(33.333333% - 20px);
 	}
 	.la-6{
-		width: calc(50%-20px);
+		width: calc(50% - 20px);
 	}
 }
 @media (max-width:1080px ) {
 	.sm-2{
-		width: calc(16.666666%-20px);
+		width: calc(16.666666% - 20px);
 	}
 	.sm-3{
-		width: calc(25%-20px);
+		width: calc(25% - 20px);
 	}
 	.sm-6{
-		width: calc(50%-20px);
+		width: calc(50% - 20px);
 	}
 	.sm-8{
-		width: calc(66.666666%-20px);
+		width: calc(66.666666% - 20px);
 	}
 	.sm-12{
-		width: calc(100%-20px);
+		width: calc(100% - 20px);
 	}
 }
