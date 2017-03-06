@@ -1,0 +1,68 @@
+/* CSS Document */
+			html, body, ul, li, ol, dl, dd, dt, p, h1, h2, h3, h4, h5, h6, form, fieldset, legend, img { margin:0; padding:0; } 
+			img { border:none; } 
+			img{display: block;}
+			ul, ol { list-style:none; } 
+			body { font-size:16px ;font-family:"微软雅黑","宋体","Arial Narrow";background-color: #FFFFFF;}
+			a { color:#2f2f2f; text-decoration:none; } 
+			.clearfix:before,.clearfix:after{
+				content: "";
+				display: table;	
+			} 
+			.clearfix:after{
+				clear: both;
+			}
+			.clearfix{
+				*zoom: 1;
+			}
+/*------common-------*/
+.wrap{
+	width: 100%;
+	max-width: 1280px;
+	margin: 0 auto;
+}
+.wrap *{
+	box-sizing: border-box;
+}
+.row div{
+	height: 50px;
+	padding: 20px;
+	margin: 10px 0px;
+	float: left;
+	border: 1px solid #999;
+	background-color: #eee;
+}
+@media (min-width:768px ) {
+	.la-1{
+		width: 8.333333%;
+	}
+	.la-2{
+		width: 16.666666%;
+	}
+	.la-3{
+		width: 25%;
+	}
+	.la-4{
+		width: 33.333333%;
+	}
+	.la-6{
+		width: 50%;
+	}
+}
+@media (max-width:768px ) {
+	.sm-2{
+		width: 16.666666%;
+	}
+	.sm-3{
+		width: 25%;
+	}
+	.sm-6{
+		width: 50%;
+	}
+	.sm-8{
+		width: 66.666666%;
+	}
+	.sm-12{
+		width: 100%;
+	}
+}
