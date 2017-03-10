@@ -1,0 +1,44 @@
+/* CSS Document */
+			html, body, ul, li, ol, dl, dd, dt, p, h1, h2, h3, h4, h5, h6, form, fieldset, legend, img { margin:0; padding:0; } 
+			img { border:none; } 
+			img{display: block;}
+			ul, ol { list-style:none; } 
+			body { font-size:16px ;font-family:"微软雅黑","宋体","Arial Narrow";background-color: #FFFFFF;}
+			a { color:#2f2f2f; text-decoration:none; } 
+			.clearfix:before,.clearfix:after{
+				content: "";
+				display: table;	
+			} 
+			.clearfix:after{
+				clear: both;
+			}
+			.clearfix{
+				*zoom: 1;
+			}
+/*------common-------*/
+.header{
+	width: 100%;
+	min-width: 1280px;
+	height: 56px;
+	background-color: #2189bf;
+}
+.content{
+	width: 1280px;
+	margin: 0 auto;
+	position: relative;
+}
+.content .sidebar{
+	width: 20%;
+	position: absolute;
+	top: 0;
+	left: 0;
+    min-height: 1224px;
+}
+.content .main{
+	width:80%;
+    padding-bottom: 156px;
+	position: absolute;
+	top: 0;
+	right: 0;
+    background-color: #eeeeed;
+}

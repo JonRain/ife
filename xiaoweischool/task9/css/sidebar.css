@@ -1,0 +1,82 @@
+.sidebar{
+	background-color: #2a2e3d;
+	font-size: 12px;
+	font-family: "黑体";
+	color: #6e8095;
+}
+/*portrait开始*/
+.portrait{
+	padding: 23px 52px;
+	background: url(../img/bg_portrait.png) no-repeat 46px 18px;
+	position: relative;
+}
+.portrait span{
+	color: #FFFFFF;
+	font-size: 16px;
+	line-height: 21px;
+	position: absolute;
+	left: 122px;
+	top: 42px;
+}
+.portrait table{
+	padding-top: 30px;
+	background: url(../img/line.png) no-repeat 46px 36px;
+}
+.portrait table td{
+	width:58px;
+	text-align:left;
+}
+.portrait tr:first-child{
+	font-size: 16px;
+	line-height: 18px;
+}
+.portrait tr:last-child{
+	font-size: 12px;
+	line-height: 13px;
+}
+
+/*nav开始*/
+.nav>ul>li{
+	padding:16px 0px 16px 71px;
+	background: url(../img/icon2.png) no-repeat 46px 16px;
+}
+.nav>ul>li.myShare{
+    background: url(../img/icon4.png) no-repeat 46px 16px;
+}
+.nav>ul>li:first-child{
+	background: #383d4e url(../img/icon1.png) no-repeat 46px 16px;
+	padding-bottom: 14px;
+	color: #ededef;
+}
+.nav ul li.notopen{
+	color: #6e8095;
+}
+.nav>ul>li:last-child{
+	background: url(../img/icon5.png) no-repeat 46px 16px;
+}
+.nav>ul>li>ul>li{
+    padding-left: 34px;
+    background: url(../img/icon_file1.png) no-repeat 16px 0px;
+    position: relative;
+}
+.nav>ul>li>ul>li.notopen{
+    background: url(../img/icon_file.png) no-repeat 16px 0px;
+}
+.nav>ul>li>ul>li span{
+    display: inline-block;
+    width: 11px;   
+    height: 11px;
+    position: absolute;
+    left: 0;
+    background: url(../img/icon_road.png) no-repeat 0px -28px;
+}
+.nav>ul>li>ul>li.notopen span{
+    background: url(../img/icon_road.png) no-repeat 0px 0px;
+}
+.nav>ul>li>ul>li>ul>li{
+    padding-left: 16px;
+    background: url(../img/icon_doc.png) no-repeat 3px 0px;
+}
+.nav>ul>li>ul>li>ul>li.notopen{
+    background: url(../img/icon_doc1.png) no-repeat 3px 0px;
+}
