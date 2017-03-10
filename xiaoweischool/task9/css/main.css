@@ -89,13 +89,21 @@
 
 .main_content .first td li {
     display: none;
+    background-color: aqua;
 }
 
 .main_content .first td li:first-child {
     display: block;
+    background: none;
 }
 
-
+.main_content .first td:hover li{
+    display: block;
+    cursor: pointer;
+}
+.main_content .first td li:hover{
+    background-color: cornflowerblue;
+}
 /*price开始*/
 
 .price {
