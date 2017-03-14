@@ -1,0 +1,29 @@
+body{
+    margin: 0;
+    padding: 0;
+}
+.parent{
+    padding: 10px;
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+    justify-content:space-between;
+}
+.child{
+    margin: 10px;
+    width: 148px;
+    border: 1px solid red;
+}
+.child:last-child{
+    border-color: blue;
+}
+@media (max-width:640px) {
+    .parent{
+        flex-wrap: wrap;
+        align-items: flex-start;
+    }
+    .child:last-child{
+        order: -1;
+    }
+    
+}
