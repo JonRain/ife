@@ -1,0 +1,222 @@
+/* CSS Document */
+			html, body, ul, li, ol, dl, dd, dt, p, h1, h2, h3, h4, h5, h6, form, fieldset, legend, img { margin:0; padding:0; } 
+			img { border:none; } 
+			img{display: block;}
+			ul, ol { list-style:none; } 
+			body { font-size:16px ;font-family: "Helvetica Neue", Helvetica, STHeiTi, sans-serif;background-color: #eee;}
+			a { color:#2f2f2f; text-decoration:none; } 
+			.clearfix:before,.clearfix:after{
+				content: "";
+				display: table;	
+			} 
+			.clearfix:after{
+				clear: both;
+			}
+			.clearfix{
+				*zoom: 1;
+			}
+/*------common-------*/
+/*h1~start*/
+body{
+    max-width:1000px;
+    margin: 0 auto;
+}
+h1,h2,h3,h4,h5,h6,nav,div{
+    background-color: #fff;
+}
+.header{
+    position: relative;
+}
+.header h1{
+    color: #fff;
+    line-height: 8vmin;
+    font-size: 4vmin;
+    text-align: center;
+    background-color: #91d4da;
+    letter-spacing: 0.5vmin;
+}
+.header span{
+    position: absolute;
+    top: 0;
+    display: block;
+    width: 10vmin;
+    padding-left: 7vmin;
+    color: #fff;
+    font-size: 3.5vmin;
+    line-height: 8vmin;
+    background: url(../img/left-arrow.svg) no-repeat 2.5vmin center;
+    background-size: 4vmin 4.5vmin;
+}
+/*nav~start*/
+nav ul{
+    display: flex;
+    flex-flow: row nowrap;
+}
+nav ul li{
+    flex: 1;
+    font-size: 3.5vmin;
+    line-height: 8vmin;
+    text-align: center;
+}
+nav ul li a{
+    display: block;
+    border-bottom: 5px solid #fff;
+}
+nav ul li a:hover{
+    border-bottom-color:#91d4da;
+}
+/*banner~start*/
+.img-responsive {
+  display: inline-block;
+  height: auto;
+  max-width: 100%;
+}
+/*label~start*/
+.label ul{
+    display: flex;
+    flex-flow: row nowrap;
+    padding: 3vmin 0;
+}
+.label ul li{
+    flex: 1;
+    font-size: 3.5vmin;
+    line-height: 8vmin;
+    text-align: center
+}
+.label ul li a{
+    display: block;
+    background: #00c7d6 url(../img/doc.svg) no-repeat center;
+    background-size:10vmin 8vmin;
+    width: 13vmin;
+    height: 13vmin;
+    border-radius: 50%;
+    margin: 0 auto;
+}
+/*section开始*/
+.section ul{
+    display: flex;
+    flex-flow: row nowrap;
+    padding: 3vmin 0;
+    margin: 0 2vmin;
+    border-top: 2px solid #ddd;
+}
+.section ul li{
+    flex: 1;
+    text-align: center;
+}
+.section ul li:nth-child(2){
+    border-left: 2px solid #ddd;
+    border-right: 2px solid #ddd;
+}
+.section ul li img{
+    display: block;
+    width: 20vmin;
+    height: 22vmin;
+    margin: 1vmin auto;
+}
+.section ul li h2{
+    font-size:4.5vmin;
+    letter-spacing: 0.4vmin;
+    color: #333;
+    line-height: 8vmin;
+}
+.section ul li p{
+    font-size:3.5vmin;
+    letter-spacing: 0.3vmin;
+    color: #555;
+    line-height: 6vmin;
+}
+/*model开始*/
+.model{
+    margin-top: 3.5vmin;
+    padding: 0vmin 2vmin 2vmin 2vmin;
+}
+.model h2{
+    font-size:3.5vmin;
+    font-family: "微软雅黑";
+    font-weight: 400;
+    line-height: 8vmin;
+    color: #777;
+    border-bottom: 2px solid #ddd;
+    margin-bottom: 2.5vmin;
+}
+.model ul{
+    display: flex;
+    flex-flow: row nowrap;
+}
+.model ul li{
+    flex: 1;
+    text-align: center;
+}
+.model ul li img{
+    display: block;
+    width: 23vmin;
+    border:1px solid #fcbc33;
+    margin-bottom: 2vmin;
+}
+.model ul li p{
+    background-color: #f8f8f8;
+    width: 32vmin;
+    height: 9.5vmin;
+    margin-right: 2.5vmin;
+    margin-bottom: 2.5vmin;
+    line-height: 9.5vmin;
+    color: #4b4b4b;
+    font-size: 3.2vmin;
+    letter-spacing: 0.3vmin;
+}
+.model ul li:last-child p{
+    margin-right: 0;
+}
+/*article开始*/
+.article{
+    margin-top: 3.5vmin;
+    padding-bottom: 10vmin;
+    background-color: #eee;
+}
+.article1 ul{
+    display: flex;
+    flex-flow: row nowrap;
+    padding: 2vmin;
+    border-bottom: 2px solid #e8e8e8;
+    
+}
+.article1 ul li:first-child{
+    flex: 1;
+}
+.article ul li img{
+    display: block;
+    width: 27vmin;
+}
+.article1 ul li:last-child{
+    flex: 2;
+    display: flex;
+    flex-flow: column nowrap;
+    margin-right: 5vmin;
+}
+.article ul li h2{
+    flex:1;
+    font-size: 4vmin;
+    font-weight: 500;
+    font-family: "微软雅黑";
+    letter-spacing: 0.4vmin;
+    color: #646464;
+}
+.article ul li p{
+    color: #c4c4c4;
+    font-size: 2.5vmin;
+}
+.article2{
+    padding: 2vmin;
+}
+.article2 ul li:nth-child(2){
+    display: flex;
+    flex-flow: row nowrap;
+}
+.article2 ul li:nth-child(2) img{
+    flex: 1;
+    height: 23vmin;
+}
+.article2 ul li:nth-child(2) img:nth-child(2){
+    margin: 0 1vmin;
+}
