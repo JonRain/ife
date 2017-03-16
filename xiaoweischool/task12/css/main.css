@@ -1,0 +1,93 @@
+/* CSS Document */
+			html, body, ul, li, ol, dl, dd, dt, p, h1, h2, h3, h4, h5, h6, form, fieldset, legend, img { margin:0; padding:0; } 
+			img { border:none; } 
+			img{display: block;}
+			ul, ol { list-style:none; } 
+			body { font-size:16px ;font-family: "Helvetica Neue", Helvetica, STHeiTi, sans-serif;background-color: #fff;}
+			a { color:#2f2f2f; text-decoration:none; } 
+			.clearfix:before,.clearfix:after{
+				content: "";
+				display: table;	
+			} 
+			.clearfix:after{
+				clear: both;
+			}
+			.clearfix{
+				*zoom: 1;
+			}
+/*------common-------*/
+table tr:nth-child(2n+1){
+    background-color: #cccccc;
+}
+table tr:first-child{
+    background-color: #000;
+    color: #fff;
+}
+table tr:nth-child(2){
+    color: #f00;
+}
+table tr:nth-child(3){
+    color: #f00;
+}
+table tr:nth-child(4){
+    color: #f00;
+}
+form input:first-child{
+    display: block;
+    height: 25px;
+    margin-left: 20px;
+    border: none;
+    outline: none;
+    box-shadow:1px 1px 2px #ddd,-1px -1px 2px #ddd,1px 1px 2px #ddd inset,-1px -1px 2px #ddd inset;
+ ;
+}
+form input:last-child{
+    outline: none;
+    border: none;
+    display: block;
+    height: 25px;
+    width: 300px;
+    margin-top: 20px;
+    margin-left: 20px;
+    border-radius: 2px;
+    box-shadow: 2px 2px 4px #77b1fe,-2px -2px 4px #77b1fe,2px 2px 4px #77b1fe inset ,-2px -2px 4px #77b1fe inset;
+}
+div{
+    margin-top: 20px;
+    width:500px;
+    height: 200px;
+    background-color: #008100;
+    position: relative;
+}
+div ul{
+    position: absolute;
+    right: 0;
+    bottom: 0;
+}
+div ul li{
+    float: left;
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    font-size: 20px;
+    color: #fff;
+    text-shadow: 1px 1px 2px #eee;
+    background-color: rgba(221,221,221,0.5)
+}
+div ul li:nth-child(2){
+    margin: 0 3px;
+}
+div div{
+    width: 250px;
+    float: left;
+    margin: 0;
+}
+div div:first-of-type{
+    background-color: #0100fe;
+    box-shadow: 4px 4px 6px #0010ca inset,-4px -4px 6px #0010ca inset;
+}
+div:last-child{
+    background-color: #0100fe;
+    box-shadow: 4px 4px 6px #0010ca inset,-4px -4px 6px #0010ca inset;
+}
