@@ -36,9 +36,8 @@ window.onload = function(){
             }else{
                 container.appendChild(items);                    //添加到文档节点树中
             }
-        items.style.height = text*5+"px";
+            onData.value="";            //清空输入框中的值
         }
-        document.getElementById("data").value=""; //清空输入框里的值
     }
     
     //    btn2 功能实现
@@ -48,9 +47,8 @@ window.onload = function(){
             var items = document.createElement("li");  //创建文本容器
             items.innerHTML=text;                      //数据存入容器
             container.appendChild(items);                    //添加到文档节点树中
-            items.style.height = text*5+"px";
         }
-         document.getElementById("data").value=""; //清空输入框里的值
+        onData.value="";            //清空输入框中的值
     }
     
     //btn3功能实现
@@ -69,12 +67,24 @@ window.onload = function(){
     //js.prototype.sort()排序
     btn5.onclick=function(){
         var lis = container.getElementsByTagName("li");  //伪数组
-        var liArray = Array.prototype.slice.call(lis,0); //转换成数组
-        console.log(liArray);
+        var liArray = [];
+        for(var i=0;i<lis.length;i++){
+            liArray[i]=lis[i].innerHTML;
+        }
         liArray.sort(function(a,b){
-            return a.style.height-b.style.height;
+            return a-b;
         })
-        console.log(liArray);
+        var sortLi=document.getElementById("sortLi");
+        if(sortLi.getElementsByTagName("li").length!=0){
+				sortLi.innerHTML = "";
+			}
+        for( var i=0; i<liArray.length; i++)
+		{     
+            var li =document.createElement("li");
+            li.style.height = liArray[i]*5+"px";
+			li.innerHTML=liArray[i];
+            sortLi.appendChild(li);
+		}
     }
     
 }
