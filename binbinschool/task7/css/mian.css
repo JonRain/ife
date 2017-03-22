@@ -1,0 +1,28 @@
+/* CSS Document */
+			html, body, ul, li, ol, dl, dd, dt, p, h1, h2, h3, h4, h5, h6, form, fieldset, legend, img { margin:0; padding:0; } 
+			img { border:none; } 
+			img{display: block;}
+			ul, ol { list-style:none; } 
+			body { font-size:16px ;font-family:"微软雅黑","宋体","Arial Narrow";background-color: #FFFFFF;}
+			a { color:#2f2f2f; text-decoration:none; } 
+			.clearfix:before,.clearfix:after{
+				content: "";
+				display: table;	
+			} 
+			.clearfix:after{
+				clear: both;
+			}
+			.clearfix{
+				*zoom: 1;
+			}
+/*------common-------*/
+.binaryTree,.binaryTree div{
+    display: flex;
+    flex-flow: row nowrap;
+    margin: 5px;
+    padding: 30px 25px;
+    border: 1px solid black;
+}
+.binaryTree div{
+    flex: 1;
+}
