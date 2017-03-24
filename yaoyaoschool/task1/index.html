@@ -1,0 +1,94 @@
+<!doctype html>
+
+<head>
+    <meta charset="utf-8">
+    <title>表单验证</title>
+    <style>
+        body {
+            font: 1em sans-serif;
+            padding: 0;
+            margin: 0;
+        }
+    
+        p {
+            display: flex;
+            flex-flow: row nowrap;
+            justify-content: center;
+            font-weight: 600;
+            text-align: center;
+            line-height: 44px;
+            height: 44px;
+            font-size: 18px;
+            position: relative;
+        }
+        
+        p label {
+            width: 100px;
+        }
+        
+        p input {
+            box-sizing: border-box;
+            border: 2px solid #ccc;
+            padding-left: 20px;
+            border-radius: 5px;
+            width: 400px;
+            outline: none;
+            font-size: 16px;
+        }
+        
+        input:valid {
+            border-color: #0d0;
+        }
+        
+        input:invalid {
+            border-color: #f00;
+        }
+        
+        input:focus:invalid {
+            outline: none;
+        }
+        
+        p button {
+            width: 80px;
+            margin-left: 20px;
+            box-sizing: border-box;
+            background-color: #2f78ba;
+            color: #fff;
+            border: 1px solid #2f78ff;
+            border-radius: 4px;
+            font-weight: 600;
+        }
+        p>span{
+            position: absolute;
+            left: 30%;
+            top: 44px;
+        }
+    </style>
+</head>
+
+<body>
+    <form novalidate>
+        <p>
+            <label for="name">
+              <span>名称</span>
+            </label>
+            <input type="text" id="mc" name="mc">
+            <button>验证</button>
+            <span id="error" class="error">必填，长度为4-16个字符</span>
+        </p>
+        
+    </form>
+    <script>
+        var form = document.getElementsByTagName('form')[0];
+        var mc = document.getElementById('mc');
+        var error = document.getElementById('error');
+        var btn = document.getElementsByTagName("button")[0];
+        btn.addEventListener("click",function(event){
+            if(mc.value==""||mc.value.length>8){
+                alert(error);
+                error.innerHTML="请输出正确的名称";
+                alert(error.innerHTML);
+            }
+        })
+    </script>
+</body>
